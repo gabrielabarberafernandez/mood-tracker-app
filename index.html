@@ -4,32 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mood Tracker App 🌱</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <div class="app-wrapper">
     <h1>🌿 Mood Tracker</h1>
     <p>Registra tu estado de ánimo diario</p>
-  </header>
 
-  <main>
-    <section class="tracker">
-      <h2>¿Cómo te sientes hoy?</h2>
-      <div class="moods">
-        <button class="mood-btn" data-mood="😊">😊</button>
-        <button class="mood-btn" data-mood="😐">😐</button>
-        <button class="mood-btn" data-mood="😢">😢</button>
-      </div>
+    <h2 id="motivational-message"></h2>
 
-      <textarea id="note" placeholder="Escribe una nota (opcional)"></textarea>
-      <button id="saveMood">Guardar</button>
-    </section>
+    <div class="container">
+      <section class="tracker">
+        <h2>¿Cómo te sientes hoy?</h2>
+        <div class="moods">
+          <button class="mood-btn" data-mood="😊">😊</button>
+          <button class="mood-btn" data-mood="😐">😐</button>
+          <button class="mood-btn" data-mood="😢">😢</button>
+        </div>
 
-    <section class="history">
-      <h2>🪷 Historial de estados</h2>
-      <ul id="moodList"></ul>
-    </section>
-  </main>
+        <textarea id="note" placeholder="Escribe una nota (opcional)"></textarea>
+        <button id="saveMood">Guardar</button>
+      </section>
+
+      <section class="history">
+        <h2>🪷 Historial de estados</h2>
+        <ul id="moodList"></ul>
+      </section>
+    </div>
+  </div>
 
   <script src="js/app.js"></script>
 </body>
